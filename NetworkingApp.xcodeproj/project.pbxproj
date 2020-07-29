@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,35 @@
 		0A3F8EB324CA7C3700A27C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F8EB224CA7C3700A27C1C /* Assets.xcassets */; };
 		0A3F8EB624CA7C3700A27C1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F8EB524CA7C3700A27C1C /* Preview Assets.xcassets */; };
 		0A3F8EB924CA7C3700A27C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F8EB724CA7C3700A27C1C /* LaunchScreen.storyboard */; };
+		0A3F8EC324CA836600A27C1C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3F8EC224CA836600A27C1C /* Moya */; };
+		0A3F8EC524CA836600A27C1C /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3F8EC424CA836600A27C1C /* RxMoya */; };
+		0A3F8EC724CA836600A27C1C /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3F8EC624CA836600A27C1C /* ReactiveMoya */; };
+		0A3F8ECB24CE6F0C00A27C1C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8ECA24CE6F0C00A27C1C /* BaseService.swift */; };
+		0A3F8ECD24CE6FE900A27C1C /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8ECC24CE6FE900A27C1C /* TestModel.swift */; };
+		0A3F8ECF24CE703A00A27C1C /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8ECE24CE703A00A27C1C /* AccountRepository.swift */; };
+		0A3F8ED124CE72A300A27C1C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8ED024CE72A300A27C1C /* LoginViewModel.swift */; };
+		0A3F8ED524CE768F00A27C1C /* RequestLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8ED424CE768F00A27C1C /* RequestLoggingPlugin.swift */; };
+		0A3F8ED724CE9A8D00A27C1C /* LSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8ED624CE9A8D00A27C1C /* LSError.swift */; };
+		0A3F8EDA24CEBC3000A27C1C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3F8ED924CEBC3000A27C1C /* Swinject */; };
+		0A3F8EDD24CFA7EA00A27C1C /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A3F8EDC24CFA7EA00A27C1C /* CocoaLumberjackSwift */; };
+		0A3F8EE024CFA83B00A27C1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EDF24CFA83B00A27C1C /* Logger.swift */; };
+		0A3F8EE224CFB2B300A27C1C /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EE124CFB2B300A27C1C /* DI.swift */; };
+		0A3F8EE724CFBB0C00A27C1C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EE624CFBB0C00A27C1C /* UserModel.swift */; };
+		0A3F8EE924CFBC8800A27C1C /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EE824CFBC8800A27C1C /* TokenModel.swift */; };
+		0A3F8EEB24CFC58100A27C1C /* MetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EEA24CFC58100A27C1C /* MetaModel.swift */; };
+		0A3F8EED24CFC98300A27C1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EEC24CFC98300A27C1C /* Constants.swift */; };
+		0A3F8EEF24CFC9AE00A27C1C /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EEE24CFC9AE00A27C1C /* UserPreferences.swift */; };
+		0A3F8EF124CFEA0F00A27C1C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EF024CFEA0F00A27C1C /* LoginView.swift */; };
+		0A3F8EF324CFEA2A00A27C1C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EF224CFEA2A00A27C1C /* MainView.swift */; };
+		0A3F8EF524CFEB1A00A27C1C /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EF424CFEB1A00A27C1C /* ViewRouter.swift */; };
+		0A3F8EF724CFF72F00A27C1C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EF624CFF72F00A27C1C /* MainViewModel.swift */; };
+		0A3F8EF924D004EF00A27C1C /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EF824D004EF00A27C1C /* SplashViewModel.swift */; };
+		0A3F8EFE24D00B1500A27C1C /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EFD24D00B1500A27C1C /* OrderListView.swift */; };
+		0A3F8F0024D00C9600A27C1C /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8EFF24D00C9600A27C1C /* OrderRepository.swift */; };
+		0A3F8F0224D0116B00A27C1C /* OrderListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8F0124D0116B00A27C1C /* OrderListModel.swift */; };
+		0A3F8F0424D011CC00A27C1C /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8F0324D011CC00A27C1C /* OrderModel.swift */; };
+		0A3F8F0624D012C300A27C1C /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8F0524D012C300A27C1C /* OrderListViewModel.swift */; };
+		0A3F8F0C24D1383200A27C1C /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F8F0B24D1383200A27C1C /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +53,30 @@
 		0A3F8EB524CA7C3700A27C1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A3F8EB824CA7C3700A27C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3F8EBA24CA7C3700A27C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3F8ECA24CE6F0C00A27C1C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		0A3F8ECC24CE6FE900A27C1C /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		0A3F8ECE24CE703A00A27C1C /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepository.swift; sourceTree = "<group>"; };
+		0A3F8ED024CE72A300A27C1C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0A3F8ED424CE768F00A27C1C /* RequestLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingPlugin.swift; sourceTree = "<group>"; };
+		0A3F8ED624CE9A8D00A27C1C /* LSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSError.swift; sourceTree = "<group>"; };
+		0A3F8EDF24CFA83B00A27C1C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0A3F8EE124CFB2B300A27C1C /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		0A3F8EE624CFBB0C00A27C1C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0A3F8EE824CFBC8800A27C1C /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		0A3F8EEA24CFC58100A27C1C /* MetaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaModel.swift; sourceTree = "<group>"; };
+		0A3F8EEC24CFC98300A27C1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0A3F8EEE24CFC9AE00A27C1C /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		0A3F8EF024CFEA0F00A27C1C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0A3F8EF224CFEA2A00A27C1C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A3F8EF424CFEB1A00A27C1C /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		0A3F8EF624CFF72F00A27C1C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0A3F8EF824D004EF00A27C1C /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		0A3F8EFD24D00B1500A27C1C /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		0A3F8EFF24D00C9600A27C1C /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
+		0A3F8F0124D0116B00A27C1C /* OrderListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListModel.swift; sourceTree = "<group>"; };
+		0A3F8F0324D011CC00A27C1C /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		0A3F8F0524D012C300A27C1C /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		0A3F8F0B24D1383200A27C1C /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +84,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3F8EC524CA836600A27C1C /* RxMoya in Frameworks */,
+				0A3F8EC324CA836600A27C1C /* Moya in Frameworks */,
+				0A3F8EC724CA836600A27C1C /* ReactiveMoya in Frameworks */,
+				0A3F8EDA24CEBC3000A27C1C /* Swinject in Frameworks */,
+				0A3F8EDD24CFA7EA00A27C1C /* CocoaLumberjackSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +114,16 @@
 		0A3F8EAB24CA7C3400A27C1C /* NetworkingApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A3F8EE524CFB81000A27C1C /* model */,
+				0A3F8EE424CFB76200A27C1C /* service */,
+				0A3F8EE324CFB74800A27C1C /* screen */,
+				0A3F8EDE24CFA7F600A27C1C /* common */,
+				0A3F8EC024CA824800A27C1C /* network */,
 				0A3F8EAC24CA7C3400A27C1C /* AppDelegate.swift */,
 				0A3F8EAE24CA7C3400A27C1C /* SceneDelegate.swift */,
+				0A3F8EE124CFB2B300A27C1C /* DI.swift */,
 				0A3F8EB024CA7C3400A27C1C /* ContentView.swift */,
+				0A3F8EF824D004EF00A27C1C /* SplashViewModel.swift */,
 				0A3F8EB224CA7C3700A27C1C /* Assets.xcassets */,
 				0A3F8EB724CA7C3700A27C1C /* LaunchScreen.storyboard */,
 				0A3F8EBA24CA7C3700A27C1C /* Info.plist */,
@@ -73,6 +138,87 @@
 				0A3F8EB524CA7C3700A27C1C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A3F8EC024CA824800A27C1C /* network */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8ECA24CE6F0C00A27C1C /* BaseService.swift */,
+				0A3F8ED424CE768F00A27C1C /* RequestLoggingPlugin.swift */,
+				0A3F8F0B24D1383200A27C1C /* NetworkProvider.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		0A3F8EDE24CFA7F600A27C1C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8ED624CE9A8D00A27C1C /* LSError.swift */,
+				0A3F8EDF24CFA83B00A27C1C /* Logger.swift */,
+				0A3F8EEC24CFC98300A27C1C /* Constants.swift */,
+				0A3F8EEE24CFC9AE00A27C1C /* UserPreferences.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		0A3F8EE324CFB74800A27C1C /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8EFB24D00AE600A27C1C /* main */,
+				0A3F8EFA24D00AD100A27C1C /* account */,
+				0A3F8EF424CFEB1A00A27C1C /* ViewRouter.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		0A3F8EE424CFB76200A27C1C /* service */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8ECE24CE703A00A27C1C /* AccountRepository.swift */,
+				0A3F8EFF24D00C9600A27C1C /* OrderRepository.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		0A3F8EE524CFB81000A27C1C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8ECC24CE6FE900A27C1C /* TestModel.swift */,
+				0A3F8EE624CFBB0C00A27C1C /* UserModel.swift */,
+				0A3F8EE824CFBC8800A27C1C /* TokenModel.swift */,
+				0A3F8EEA24CFC58100A27C1C /* MetaModel.swift */,
+				0A3F8F0124D0116B00A27C1C /* OrderListModel.swift */,
+				0A3F8F0324D011CC00A27C1C /* OrderModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0A3F8EFA24D00AD100A27C1C /* account */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8EF024CFEA0F00A27C1C /* LoginView.swift */,
+				0A3F8ED024CE72A300A27C1C /* LoginViewModel.swift */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		0A3F8EFB24D00AE600A27C1C /* main */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8EFC24D00B0500A27C1C /* order */,
+				0A3F8EF224CFEA2A00A27C1C /* MainView.swift */,
+				0A3F8EF624CFF72F00A27C1C /* MainViewModel.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		0A3F8EFC24D00B0500A27C1C /* order */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F8EFD24D00B1500A27C1C /* OrderListView.swift */,
+				0A3F8F0524D012C300A27C1C /* OrderListViewModel.swift */,
+			);
+			path = order;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +237,13 @@
 			dependencies = (
 			);
 			name = NetworkingApp;
+			packageProductDependencies = (
+				0A3F8EC224CA836600A27C1C /* Moya */,
+				0A3F8EC424CA836600A27C1C /* RxMoya */,
+				0A3F8EC624CA836600A27C1C /* ReactiveMoya */,
+				0A3F8ED924CEBC3000A27C1C /* Swinject */,
+				0A3F8EDC24CFA7EA00A27C1C /* CocoaLumberjackSwift */,
+			);
 			productName = NetworkingApp;
 			productReference = 0A3F8EA924CA7C3400A27C1C /* NetworkingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +272,11 @@
 				Base,
 			);
 			mainGroup = 0A3F8EA024CA7C3400A27C1C;
+			packageReferences = (
+				0A3F8EC124CA836600A27C1C /* XCRemoteSwiftPackageReference "Moya" */,
+				0A3F8ED824CEBC3000A27C1C /* XCRemoteSwiftPackageReference "Swinject" */,
+				0A3F8EDB24CFA7EA00A27C1C /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+			);
 			productRefGroup = 0A3F8EAA24CA7C3400A27C1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +304,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3F8ED724CE9A8D00A27C1C /* LSError.swift in Sources */,
+				0A3F8EE024CFA83B00A27C1C /* Logger.swift in Sources */,
 				0A3F8EAD24CA7C3400A27C1C /* AppDelegate.swift in Sources */,
 				0A3F8EAF24CA7C3400A27C1C /* SceneDelegate.swift in Sources */,
+				0A3F8F0024D00C9600A27C1C /* OrderRepository.swift in Sources */,
+				0A3F8ED124CE72A300A27C1C /* LoginViewModel.swift in Sources */,
+				0A3F8EF324CFEA2A00A27C1C /* MainView.swift in Sources */,
+				0A3F8F0224D0116B00A27C1C /* OrderListModel.swift in Sources */,
+				0A3F8EEB24CFC58100A27C1C /* MetaModel.swift in Sources */,
+				0A3F8EE724CFBB0C00A27C1C /* UserModel.swift in Sources */,
+				0A3F8EED24CFC98300A27C1C /* Constants.swift in Sources */,
+				0A3F8EEF24CFC9AE00A27C1C /* UserPreferences.swift in Sources */,
+				0A3F8F0624D012C300A27C1C /* OrderListViewModel.swift in Sources */,
+				0A3F8ECD24CE6FE900A27C1C /* TestModel.swift in Sources */,
 				0A3F8EB124CA7C3400A27C1C /* ContentView.swift in Sources */,
+				0A3F8EF124CFEA0F00A27C1C /* LoginView.swift in Sources */,
+				0A3F8F0424D011CC00A27C1C /* OrderModel.swift in Sources */,
+				0A3F8EF724CFF72F00A27C1C /* MainViewModel.swift in Sources */,
+				0A3F8EFE24D00B1500A27C1C /* OrderListView.swift in Sources */,
+				0A3F8EF924D004EF00A27C1C /* SplashViewModel.swift in Sources */,
+				0A3F8F0C24D1383200A27C1C /* NetworkProvider.swift in Sources */,
+				0A3F8EE924CFBC8800A27C1C /* TokenModel.swift in Sources */,
+				0A3F8EF524CFEB1A00A27C1C /* ViewRouter.swift in Sources */,
+				0A3F8EE224CFB2B300A27C1C /* DI.swift in Sources */,
+				0A3F8ECF24CE703A00A27C1C /* AccountRepository.swift in Sources */,
+				0A3F8ED524CE768F00A27C1C /* RequestLoggingPlugin.swift in Sources */,
+				0A3F8ECB24CE6F0C00A27C1C /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +524,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A3F8EC124CA836600A27C1C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		0A3F8ED824CEBC3000A27C1C /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		0A3F8EDB24CFA7EA00A27C1C /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A3F8EC224CA836600A27C1C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A3F8EC124CA836600A27C1C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0A3F8EC424CA836600A27C1C /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A3F8EC124CA836600A27C1C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		0A3F8EC624CA836600A27C1C /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A3F8EC124CA836600A27C1C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		0A3F8ED924CEBC3000A27C1C /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A3F8ED824CEBC3000A27C1C /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		0A3F8EDC24CFA7EA00A27C1C /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A3F8EDB24CFA7EA00A27C1C /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A3F8EA124CA7C3400A27C1C /* Project object */;
 }

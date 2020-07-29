@@ -9,13 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewRouter : ViewRouter
+    @ObservedObject var viewModel: SplashViewModel
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            if viewRouter.currentPage == "login" {
+                LoginView(viewModel: container.resolve(LoginViewModel.self)!)
+            } else {
+                MainView(viewModel: container.resolve(MainViewModel.self)!)
+            }
+        }
+        .onAppear(){
+            self.viewModel.checkToken()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewRouter: container.resolve(ViewRouter.self)!,
+                    viewModel: container.resolve(SplashViewModel.self)!)
     }
 }
